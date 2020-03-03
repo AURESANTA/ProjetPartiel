@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Blog Santana{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <a href="#" style="float: right">Liste des articles</a>
+        <a href="{{ path('app_login') }}">Connexion</a>
+        <a href="#">S'enregistrer</a>
+
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+
+    </body>
+</html>
